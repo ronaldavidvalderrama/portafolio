@@ -1,55 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    </head>
-    <body>
-        <header>
-            <div class="logo">🔳 Ronal</div>
-            <nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🔳 Ronal</div>
+        <nav>
             <ul>
-                <li><a href="#home" class="active">home</a></li>
-                <li><a href="#works">Protectos</a></li>
-                <li><a href="#about-me">Sobre mi</a></li>
-                <li><a href="#contacts">contacto</a></li>
-                <li class="lang">EN ▼</li>
+                <li><a href="#home" class="active">Inicio</a></li>
+                <li><a href="#works">Proyectos</a></li>
+                <li><a href="#about-me">Sobre mí</a></li>
+                <li><a href="#contacts">Contacto</a></li>
+                <li class="lang">ES ▼</li>
             </ul>
-            </nav>
-            <div class="social-line">
-                <ul>
+        </nav>
+        <div class="social-line">
+            <ul>
                 <li><a href="https://github.com/ronaldavidvalderrama" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="#"><i class="fab fa-discord"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ronal-gomez-aa862232a/"><i class="fab fa-discord"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ronal-gomez-aa862232a/"><i class="fab fa-linkedin"></i></a></li>
             </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="left">
+                <h1>
+                    Soy Ronal, un <span class="highlight">desarrollador de software Full Stack</span><br />
+                    con enfoque en el <span class="highlight">desarrollo backend</span> y la arquitectura de sistemas.
+                </h1>
+                <p>
+                    Me apasiona construir soluciones robustas y eficientes del lado del servidor. 
+                    Diseño APIs, gestiono bases de datos y optimizo procesos para que las aplicaciones funcionen de forma ágil y segura.
+                </p>
+                <a href="https://wa.me/3138189055?text=¡Hola!%20espero%20poder%20ayudarte%20con%20tu%20nesecidad." class="btn" target="_blank">¡Contáctame!</a>
+            </div>            
+            <div class="right">
+                <img src="img/ronal.png" alt="Ronal" />
+                <div id="status" class="status"></div>
+                <script>
+                    const texto = '"Apasionado por el código limpio y las soluciones elegantes."';
+                    const status = document.getElementById("status");
+                    let i = 0;
+            
+                    function escribirTexto() {
+                        if (i < texto.length) {
+                            status.textContent += texto.charAt(i);
+                            i++;
+                            setTimeout(escribirTexto, 50);
+                        }
+                    }
+            
+                    window.addEventListener("load", escribirTexto);
+                </script>
             </div>
-            </header>
-
-
-        <main>
-            <section class="intro">
-                <div class="left">
-                    <h1>
-                        Soy Ronal, un <span class="highlight">Desarrollador de Software Full Stack</span><br />
-                        con enfoque en el <span class="highlight">desarrollo backend</span> y la arquitectura de sistemas.
-                    </h1>
-                    <p>
-                        Me apasiona construir soluciones robustas y eficientes del lado del servidor. 
-                        Diseño APIs, gestiono bases de datos y optimizo procesos para que las aplicaciones funcionen de forma ágil y segura.
-                    </p>
-                    <a href="#contact" class="btn">¡Contáctame!</a>
-                </div>            
-                <div class="right">
-                    <img src="ronal.png" alt="Ronal" />
-                    <div class="status">
-                        "Apasionado por el código limpio y las soluciones elegantes."
-                    </div>
+        </section>
+        <section id="projects">
+            <h2><span>#</span>projects</h2>
+            <div class="projects-grid">
+          
+              <!-- Proyecto 1 -->
+              <div class="project-card">
+                <img src="img/app-desing.png" alt="Nombre del Proyecto">
+                <div class="tech">Mobile Store App Design</div>
+                <h3>CSS HTML JS</h3>
+                <p>Una app móvil de eCommerce enfocada en ropa, con diseño moderno y enfocado en la experiencia del usuario, ideal para mostrar productos, gestionar compras y explorar catálogos de moda.</p>
+                <div class="project-links">
+                  <a href="https://ronaldavidvalderrama.github.io/Mobile-eCommerce-Clothing-Store-App-Design-Community-/" target="_blank" class="live-btn">Live ↔</a>
+                  <a href="https://github.com/ronaldavidvalderrama/Mobile-eCommerce-Clothing-Store-App-Design-Community-.git" class="code-btn">Código ≫</a>
                 </div>
-            </section>
-        </main>
-    </body>
+              </div>
+          
+              <!-- Proyecto 2 -->
+              <div class="project-card">
+                <img src="img/55-pages.png" alt="Nombre del Proyecto">
+                <div class="tech">55-PAGES </div>
+                <h3>HTML CSS </h3>
+                <p>colección de 13 páginas web diseñadas con HTML y CSS, ideal para aprender, practicar o reutilizar en proyectos personales o profesionales. Cada página ofrece un diseño único, adaptable y moderno, perfecto para desarrolladores web que buscan inspiración o componentes listos para usar.</p>
+                <div class="project-links">
+                  <a href="https://ronaldavidvalderrama.github.io/55-PAGES/" target="_blank" class="live-btn">Live ↔</a>
+                  <a href="https://github.com/ronaldavidvalderrama/55-PAGES.git" class="code-btn">Código ≫</a>
+                </div>
+              </div>
+          
+              <!-- Proyecto 3 -->
+              <div class="project-card">
+                <img src="img/ahorcado.png" alt="Nombre del Proyecto">
+                <div class="tech">Juego de Ahorcado</div>
+                <h3>HTML CSS JS</h3>
+                <p>Este es un juego clásico del ahorcado hecho con HTML, CSS y JavaScript puro. El objetivo es adivinar la palabra secreta antes de cometer 6 errores y "ser ahorcado".</p>
+                <div class="project-links">
+                  <a href="https://ronaldavidvalderrama.github.io/juego-ahorcado/" class="live-btn">Live ↔</a>
+                  <a href="https://github.com/ronaldavidvalderrama/juego-ahorcado.git" class="code-btn">Código ≫</a>
+                </div>
+              </div>
+          
+            </div>
+          </section>
+          
+    </main>
+</body>
 </html>

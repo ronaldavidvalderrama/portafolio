@@ -28,6 +28,18 @@ header {
   z-index: 100;
 }
 
+
+.status {
+  font-family: monospace;
+  color: #a28eff;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #a28eff;
+  width: fit-content;
+}
+
+
 .social-line ul {
   list-style: none;
   padding: 0;
@@ -108,12 +120,13 @@ nav a:hover {
 }
 
   
-  main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 2rem;
-  }
+main {
+  display: flex;
+  flex-direction: column; /* <--- Esto es lo que te faltaba */
+  gap: 4rem;
+  padding: 4rem 2rem;
+}
+
   
   .intro {
     display: flex;
@@ -169,3 +182,91 @@ nav a:hover {
   }
   
 
+/****PROJECTS****/
+
+#projects {
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+#projects h2 span {
+  color: #a259ff;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #1c1c28;
+  border: 1px solid #2f2f3e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card .tech {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.3rem;
+}
+
+.project-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-links a {
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.live-btn {
+  background: #a259ff;
+}
+
+.live-btn:hover {
+  background: #7a39d7;
+}
+
+.code-btn {
+  background: #444;
+}
+
+.code-btn:hover {
+  background: #666;
+}
