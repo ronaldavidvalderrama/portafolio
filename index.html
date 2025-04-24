@@ -12,10 +12,10 @@
         <div class="logo">🔳 Ronal</div>
         <nav>
             <ul>
-                <li><a href="#home" class="active">Inicio</a></li>
-                <li><a href="#works">Proyectos</a></li>
-                <li><a href="#about-me">Sobre mí</a></li>
-                <li><a href="#contacts">Contacto</a></li>
+                <li><a href="#intro">Inicio</a></li> <!-- coincide con class="intro" -->
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#skills">skills</a></li> <!-- ahora skills es "sobre mí" -->
+                <li><a href="#sobre mi">Sobre mí</a></li>
                 <li class="lang">ES ▼</li>
             </ul>
         </nav>
@@ -29,7 +29,7 @@
     </header>
 
     <main>
-        <section class="intro">
+        <section id="intro" class="intro">
             <div class="left">
                 <h1>
                     Soy Ronal, un <span class="highlight">desarrollador de software Full Stack</span><br />
@@ -59,51 +59,72 @@
             
                     window.addEventListener("load", escribirTexto);
                 </script>
-            </div>
-        </section>
-        <section id="projects">
-            <h2><span>#</span>projects</h2>
-            <div class="projects-grid">
-          
-              <!-- Proyecto 1 -->
-              <div class="project-card">
-                <img src="img/app-desing.png" alt="Nombre del Proyecto">
-                <div class="tech">Mobile Store App Design</div>
-                <h3>CSS HTML JS</h3>
-                <p>Una app móvil de eCommerce enfocada en ropa, con diseño moderno y enfocado en la experiencia del usuario, ideal para mostrar productos, gestionar compras y explorar catálogos de moda.</p>
-                <div class="project-links">
-                  <a href="https://ronaldavidvalderrama.github.io/Mobile-eCommerce-Clothing-Store-App-Design-Community-/" target="_blank" class="live-btn">Live ↔</a>
-                  <a href="https://github.com/ronaldavidvalderrama/Mobile-eCommerce-Clothing-Store-App-Design-Community-.git" class="code-btn">Código ≫</a>
+            </section>
+            <section id="projects">
+                <h2><span>#</span>projects</h2>
+                <div class="projects-grid">
+
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <img src="img/app-desing.png" alt="Nombre del Proyecto">
+                    <div class="tech">Mobile Store App Design</div>
+                    <h3>CSS HTML JS</h3>
+                    <p>Una app móvil de eCommerce enfocada en ropa, con diseño moderno y enfocado en la experiencia del usuario, ideal para mostrar productos, gestionar compras y explorar catálogos de moda.</p>
+                    <div class="project-links">
+                    <a href="https://ronaldavidvalderrama.github.io/Mobile-eCommerce-Clothing-Store-App-Design-Community-/" target="_blank" class="live-btn">Live ↔</a>
+                    <a href="https://github.com/ronaldavidvalderrama/Mobile-eCommerce-Clothing-Store-App-Design-Community-.git" class="code-btn">Código ≫</a>
+                    </div>
                 </div>
-              </div>
-          
-              <!-- Proyecto 2 -->
-              <div class="project-card">
-                <img src="img/55-pages.png" alt="Nombre del Proyecto">
-                <div class="tech">55-PAGES </div>
-                <h3>HTML CSS </h3>
-                <p>colección de 13 páginas web diseñadas con HTML y CSS, ideal para aprender, practicar o reutilizar en proyectos personales o profesionales. Cada página ofrece un diseño único, adaptable y moderno, perfecto para desarrolladores web que buscan inspiración o componentes listos para usar.</p>
-                <div class="project-links">
-                  <a href="https://ronaldavidvalderrama.github.io/55-PAGES/" target="_blank" class="live-btn">Live ↔</a>
-                  <a href="https://github.com/ronaldavidvalderrama/55-PAGES.git" class="code-btn">Código ≫</a>
+
+                <!-- Proyecto 2 -->
+                <div class="project-card">
+                    <img src="img/55-pages.png" alt="Nombre del Proyecto">
+                    <div class="tech">55-PAGES</div>
+                    <h3>HTML CSS</h3>
+                    <p>Colección de 13 páginas web diseñadas con HTML y CSS, ideal para aprender, practicar o reutilizar en proyectos personales o profesionales. Cada página ofrece un diseño único, adaptable y moderno, perfecto para desarrolladores web que buscan inspiración o componentes listos para usar.</p>
+                    <div class="project-links">
+                    <a href="https://ronaldavidvalderrama.github.io/55-PAGES/" target="_blank" class="live-btn">Live ↔</a>
+                    <a href="https://github.com/ronaldavidvalderrama/55-PAGES.git" class="code-btn">Código ≫</a>
+                    </div>
                 </div>
-              </div>
-          
-              <!-- Proyecto 3 -->
-              <div class="project-card">
-                <img src="img/ahorcado.png" alt="Nombre del Proyecto">
-                <div class="tech">Juego de Ahorcado</div>
-                <h3>HTML CSS JS</h3>
-                <p>Este es un juego clásico del ahorcado hecho con HTML, CSS y JavaScript puro. El objetivo es adivinar la palabra secreta antes de cometer 6 errores y "ser ahorcado".</p>
-                <div class="project-links">
-                  <a href="https://ronaldavidvalderrama.github.io/juego-ahorcado/" class="live-btn">Live ↔</a>
-                  <a href="https://github.com/ronaldavidvalderrama/juego-ahorcado.git" class="code-btn">Código ≫</a>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="img/ahorcado.png" alt="Nombre del Proyecto">
+                    <div class="tech">Juego de Ahorcado</div>
+                    <h3>HTML CSS JS</h3>
+                    <p>Este es un juego clásico del ahorcado hecho con HTML, CSS y JavaScript puro. El objetivo es adivinar la palabra secreta antes de cometer 6 errores y "ser ahorcado".</p>
+                    <div class="project-links">
+                    <a href="https://ronaldavidvalderrama.github.io/juego-ahorcado/" class="live-btn">Live ↔</a>
+                    <a href="https://github.com/ronaldavidvalderrama/juego-ahorcado.git" class="code-btn">Código ≫</a>
+                    </div>
                 </div>
-              </div>
-          
-            </div>
-          </section>
-          
-    </main>
-</body>
+
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <h2><span>#</span>skills</h2>
+                <div class="skills-grid">
+                    <div class="category">
+                        <h3>Languages</h3>
+                        <p>HTML CSS<br>Python JavaScript</p>
+                    </div>
+                    <div class="category">
+                        <h3>Habilidades Blandas</h3>
+                        <p>Trabajo en equipo
+                            <br>Aprendizaje continuo
+                            <br>Aprendizaje continuo</p>
+                    </div>
+                    <div class="category">
+                        <h3>Herramientas</h3>
+                        <p>VSCode Neovim Linux<br>Figma XFCE Arch<br>Git Font Awesome</p>
+                    </div>
+                    <div class="category">
+                        <h3><strong>Frameworks</strong></h3>
+                        <p>React Vue<br>Discord.js<br></p>
+                    </div>
+                </div>
+            </section>
+            </main>
+    </body>
 </html>

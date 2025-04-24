@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -22,7 +26,7 @@ header {
 /* Social line a la izquierda */
 .social-line {
   position: fixed;
-  left: 10px;
+  left: 5px;
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
@@ -122,7 +126,7 @@ nav a:hover {
   
 main {
   display: flex;
-  flex-direction: column; /* <--- Esto es lo que te faltaba */
+  flex-direction: column;
   gap: 4rem;
   padding: 4rem 2rem;
 }
@@ -136,7 +140,7 @@ main {
   }
   
   .intro .left {
-    max-width: 50%;
+    max-width: 47%;
   }
   
   .intro h1 {
@@ -269,4 +273,81 @@ main {
 
 .code-btn:hover {
   background: #666;
+}
+
+/*SKILLS*/
+
+:root {
+  --accent: #a28eff;
+  --box-bg: #1c1c28;
+  --border: #3a3a4d;
+  --text: #ccc;
+}
+
+.skills {
+  padding: 4rem 2rem;
+  background-color: #141420; /* oscuro elegante */
+}
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.skills h2 span {
+  color: #a259ff; /* un moradito bonito */
+  font-size: 2rem;
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.category {
+  background-color: var(--box-bg);
+  border: 1px solid var(--border);
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  font-family: 'Courier New', monospace;
+  color: var(--text);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at top left, var(--accent), transparent 60%);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.category:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--accent);
+  box-shadow: 0 6px 16px rgba(162, 142, 255, 0.4);
+}
+
+
+.category h3 {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.category p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  white-space: pre-line;
 }
